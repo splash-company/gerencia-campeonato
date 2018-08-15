@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">  
+  
+<hibernate-configuration>  
+    <session-factory>  
+        <!-- Database connection settings -->  
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>  
+        <property name="connection.url"></property>  
+        <property name="connection.username"></property>  
+        <property name="connection.password"></property>  
+  
+        <!-- JDBC connection pool (use the built-in) -->  
+        <property name="connection.pool_size">1</property>  
+  
+        <!-- SQL dialect -->  
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>  
+  
+        <!-- Echo all executed SQL to stdout -->  
+        <property name="show_sql">true</property>  
+  
+        <!-- Mapping files -->  
+        <mapping class="SplashCompany.gc.model.Adress"/>  
+        <mapping class="SplashCompany.gc.model.Artillery"/>  
+        <mapping class="SplashCompany.gc.model.Champioship"/>
+        <mapping class="SplashCompany.gc.model.Confrotations"/>
+        <mapping class="SplashCompany.gc.model.Contact"/>
+        <mapping class="SplashCompany.gc.model.Player"/>
+        <mapping class="SplashCompany.gc.model.Table"/>
+        <mapping class="SplashCompany.gc.model.Team"/>
+        <mapping class="SplashCompany.gc.model.TypeChampioship"/>
+        <mapping class="SplashCompany.gc.model.TypeTeam"/>
+        <mapping class="SplashCompany.gc.model.User"/>
+    </session-factory>  
+</hibernate-configuration>  
