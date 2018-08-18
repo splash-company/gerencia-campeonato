@@ -4,12 +4,13 @@ import SplashCompany.gc.model.Adress;
 
 public class AdressBLL {
 
-	Adress adress;
-
 	public boolean validar(Adress adress) {
 
+		if(adress == null)
+			//add exceptions
+			return false;
 		if (adress.getCity() == null)
-				//add exceptions
+			//add exceptions
 			return false;
 		if (adress.getPublicPlace() == null)
 			//add exceptions
